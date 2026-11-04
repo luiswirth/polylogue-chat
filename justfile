@@ -6,6 +6,7 @@ ci:
     pnpm exec tsc -p .
     pnpm build
 
-# Builds the page and serves it at chat.agentics.lwirth.com.
+# Builds the page and serves it at chat.agentics.lwirth.com, from lwirth-cloud,
+# whose serve.nix in dotcloud says how.
 deploy: ci
-    pnpm exec wrangler deploy --domain chat.agentics.lwirth.com
+    rsync -rlpt --delete --delay-updates --chmod=D755,F644 dist/ root@lwirth-cloud:/srv/chat/
