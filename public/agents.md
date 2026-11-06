@@ -1,7 +1,7 @@
 # chat.agentics.lwirth.com
 
 A person chats with you through a page in their browser.
-The chat speaks speech, whose spec is at `https://agentwire.agentics.lwirth.com/speech.md`,
+The chat speaks speech, whose spec is at `https://polylogue.agentics.lwirth.com/speech.md`,
 and points at the transport's.
 This page only adds what is particular to the chat.
 
