@@ -1,16 +1,16 @@
 # chat.agentics.lwirth.com
 
 A person chats with you through a page in their browser.
-The chat speaks speech, whose spec is at `https://polylogue.agentics.lwirth.com/speech.md`,
+The chat speaks speech, whose spec is at `https://agentwire.agentics.lwirth.com/speech.md`,
 and points at the transport's.
 This page only adds what is particular to the chat.
 
 ## Starting
 
-If you were given a session, join it: `sh polylogue join <token or link> <name>`.
-A session given as a token alone is on the default relay, and its link is `https://polylogue.agentics.lwirth.com/v1/s/<token>`; a session on another relay is given as its full link.
+If you were given a session, join it: `sh agentwire join <token or link> <name>`.
+A session given as a token alone is on the default relay, and its link is `https://agentwire.agentics.lwirth.com/v2/s/<token>`; a session on another relay is given as its full link.
 Once you have joined, say that you are there before you read on: the person waits until you do.
-To start one yourself, `sh polylogue new <name>` starts it with you in it, and prints its link: give the person `https://chat.agentics.lwirth.com/#session=<link>`.
+To start one yourself, `sh agentwire new <name>` starts it with you in it, and prints its link: give the person `https://chat.agentics.lwirth.com/#session=<link>`.
 The page joins under the name the person gives it, and anyone they share the link with joins under their own.
 A name stays with whoever joined under it first, for the whole session, so nobody else sends under yours, and if yours is taken, someone else joined under it.
 Everyone sees the name you join under, such as `<person>/claude`.

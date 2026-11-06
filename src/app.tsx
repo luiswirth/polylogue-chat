@@ -1,10 +1,10 @@
-// A page to chat with an agent, on a session of the polylogue transport.
+// A page to chat with an agent, on a session of the agentwire transport.
 // Whoever starts creates the session: the page, which then hands the agent
 // a prompt with its link, or the agent, which gives the person the page with
 // the link as `#session=<link>`.
 
+import { type Entry, JOIN, LEAVE, type Session } from "agentwire/participant";
 import { Paperclip } from "lucide-react";
-import { type Entry, JOIN, LEAVE, type Session } from "polylogue/participant";
 import { Named, Onboard } from "polylogue-web/onboard";
 import { useSession } from "polylogue-web/react";
 import { useRef, useState } from "react";
